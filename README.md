@@ -1,5 +1,5 @@
 # CGN
-Code for Contrastive-Geometry Networks for Generalized 3D Pose Transfer
+Code for Contrastive-Geometry Transformer network for Generalized 3D Pose Transfer
 
 ## Dependencies
 
