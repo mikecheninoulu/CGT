@@ -1,44 +1,58 @@
 # CGN
 Code for Contrastive-Geometry Transformer network for Generalized 3D Pose Transfer
+# AniFormer
+
+This is the PyTorch implementation of our AAAI 2022 paper [Geometry-Contrastive Transformer for Generalized 3D Pose Transfer].
+[Haoyu Chen](https://scholar.google.com/citations?user=QgbraMIAAAAJ&hl=en), [Hao Tang](https://github.com/Ha0Tang), [Zitong Yu](https://scholar.google.com/citations?user=ziHejLwAAAAJ&hl=en), [Nicu Sebe](https://scholar.google.it/citations?user=tNtjSewAAAAJ&hl=en), [Guoying Zhao](https://scholar.google.com/citations?user=hzywrFMAAAAJ&hl=en). <br>
+
+<img src="AAAI.PNG" width="800" height="600">
+
+#### Citation
+
+If you use our code or paper, please consider citing:
+```
+@inproceedings{chen2021GCN,
+  title={AniFormer: Data-driven 3D Animation withTransformer},
+  author={Chen, Haoyu and Tang, Hao and Yu, Zitong and Sebe, Nicu and Zhao, Guoying},
+  booktitle={AAAI},
+  year={2021}
+}
+```
 
 ## Dependencies
 
 Requirements:
 - python3.6
 - numpy
-- pytorch==1.1.0
-- [trimesh]
+- pytorch==1.1.0 and above
+- [trimesh](https://github.com/mikedh/trimesh)
 
-Our code has been tested with Python 3.6, Pytorch1.1.0, CUDA 9.0 on Ubuntu 16.04.
-
-## Data and Pre-trained model
-
-### NPT dataset
-We provide dataset and pre-trained model used, please download data from [data link](http://www.sdspeople.fudan.edu.cn/fuyanwei/download/NeuralPoseTransfer/data/), and download model weights from [model link](http://www.sdspeople.fudan.edu.cn/fuyanwei/download/NeuralPoseTransfer/ckpt/). The test data file lists are also provided, the mesh file order in file lists are `identiy pose gt`.
-(Backup links: [Google Drive](https://drive.google.com/drive/folders/1ZduWjWn5sqbiU7aG2VSFm5YcdGudFTwk?usp=sharing))
-
-### Other datasets
-
-TBD
-
-## Running the demo
-We provide the pre-trained model for the original method and maxpooling method and also two meshes for test. For you own data, please train the model by yourself, because the pose parameter space may be different. For human meshes with clothes, we recommend the max-pooling method.
-```
-python demo.py
-```
+## Dataset preparation
+We use the SMPL-NPT dataset provided by NPT, please download data from this link http://www.sdspeople.fudan.edu.cn/fuyanwei/download/NeuralPoseTransfer/data/, 
 
 ## Training
-We provide both original and max-pooling methods. The original method has slightly better quantitative results. The max-pooling method is more convenient when dealing with identity and pose meshes with different number of vertices and this method produces smoother results.
+The usage of our code is easy, just run the code below.
 ```
 python train.py
 ```
-Tran LIR 
-```
-python train_latent_pose_normalization.py
-```
 
-## Evaluation
-evaluation_NPT.py is the code for evaluation.
+# Evaluation
+
+We use the same evaluation protocol as NPT for both seen and unseen settings.
+
+Run the code below to conduct the evaluation.
+```
+python evaluation_NPT.py
+```
 
 ## Acknowledgement
-TBD
+Part of our code is based on 
+
+3D transfer: [NPT](https://github.com/jiashunwang/Neural-Pose-Transfer)，
+
+Transformer framework: (https://github.com/lucidrains/vit-pytorch) 
+
+Many thanks!
+
+## License
+MIT-2.0 License
