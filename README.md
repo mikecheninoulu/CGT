@@ -12,7 +12,7 @@ This is the PyTorch implementation of our AAAI 2022 paper Geometry-Contrastive T
 If you use our code or paper, please consider citing:
 ```
 @inproceedings{chen2021GCN,
-  title={AniFormer: Data-driven 3D Animation withTransformer},
+  title={Geometry-Contrastive Transformer for Generalized 3D Pose Transfer},
   author={Chen, Haoyu and Tang, Hao and Yu, Zitong and Sebe, Nicu and Zhao, Guoying},
   booktitle={AAAI},
   year={2021}
