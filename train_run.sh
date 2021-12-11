@@ -1,1 +1,1 @@
-python train.py --batch_size 8 --shuffle False --dataset SMG-3D --model_type original --train_epoch 10 --train_size 20 --lamda 0.005 --keep_train 0
+python train.py --batch_size 8 --shuffle True --dataset SMPL-NPT --model_type CGP --train_epoch 200 --train_size 6000 --lamda 0.0005 --keep_train 0
