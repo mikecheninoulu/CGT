@@ -5,7 +5,7 @@ Code for Contrastive-Geometry Transformer network for Generalized 3D Pose Transf
 This is the PyTorch implementation of our AAAI 2022 paper [Geometry-Contrastive Transformer for Generalized 3D Pose Transfer].
 [Haoyu Chen](https://scholar.google.com/citations?user=QgbraMIAAAAJ&hl=en), [Hao Tang](https://github.com/Ha0Tang), [Zitong Yu](https://scholar.google.com/citations?user=ziHejLwAAAAJ&hl=en), [Nicu Sebe](https://scholar.google.it/citations?user=tNtjSewAAAAJ&hl=en), [Guoying Zhao](https://scholar.google.com/citations?user=hzywrFMAAAAJ&hl=en). <br>
 
-<img src="AAAI.PNG" width="800" height="600">
+<img src="AAAI.PNG" width="800" height="400">
 
 #### Citation
 
