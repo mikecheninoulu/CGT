@@ -1,4 +1,4 @@
-# CGN
+# CGTransformer
 Code for Contrastive-Geometry Transformer network for Generalized 3D Pose Transfer
 # AniFormer
 
