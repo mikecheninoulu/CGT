@@ -1,5 +1,5 @@
 # CGTransformer
-Code for Contrastive-Geometry Transformer network for Generalized 3D Pose Transfer
+Code for our AAAI 2022 paper "Contrastive-Geometry Transformer network for Generalized 3D Pose Transfer"
 # Contrastive-Geometry Transformer
 
 This is the PyTorch implementation of our AAAI 2022 paper Geometry-Contrastive Transformer for Generalized 3D Pose Transfer.
