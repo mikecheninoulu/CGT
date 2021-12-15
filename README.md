@@ -15,7 +15,7 @@ If you use our code or paper, please consider citing:
   title={Geometry-Contrastive Transformer for Generalized 3D Pose Transfer},
   author={Chen, Haoyu and Tang, Hao and Yu, Zitong and Sebe, Nicu and Zhao, Guoying},
   booktitle={AAAI},
-  year={2021}
+  year={2022}
 }
 ```
 
